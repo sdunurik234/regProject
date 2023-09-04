@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title class="tt">HY,NJ,MA Home Price Prediction</title>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+	<div class="text"><p class="soz">Я создал этот проект ради интереса и ради эксперимента в создании веб-сайта и использовании языка Javascript. У меня много промахов с точки зрения веб-разработки и в бэкенд части.
+В этом проекте я выбираю регрессионный проект, который делает прогнозы цен на дома в Нью-Йорке, Массачусетсе, Нью-Джерси. Да, у меня в проекте мало вывесок. Я не проводил перекрестную проверку, а выбрал случайный алгоритм ML и брал данные из kaggle.
+Следующий проект будет основан на использовании CV
+	Все элементы проекта будет в разделе </p></div>
+	<div id="result"></div>
+	<div class="title">
+		<h1>Home Price Prediction</h1>
+	</div>
+	    <header>
+        <nav>
+            <ul>
+                <li><a href="https://github.com/sdunurik234">GitHub</a></li>
+            </ul>
+        </nav>
+    </header>
+	<form class="form" method="POST" >
+		<div class="img"></div>
+		<div class="cont">
+			<div>
+
+				<h2>Area</h2>
+				<input class="cont_input" id='inputVal' name="area_sqft" value="1000">
+			</div>
+			<div class="cont_bed">
+				<h2>Bedrooms</h2>
+				<input class="bd" type="radio" id="bd1" value="1" name="bed"/>
+				<label for="bd1">1</label>
+				<input class="bd" type="radio" id="bd2" value="2" name="bed"/>
+				<label for="bd2">2</label>
+				<input class="bd" type="radio" id="bd3" value="3" name="bed"/>
+				<label for="bd3">3</label>
+				<input class="bd" type="radio" id="bd4" value="4" name="bed"/>
+				<label for="bd4">4</label>
+				<input class="bd" type="radio" id="bd5" value="5" name="bed"/>
+				<label for="bd5">5</label>
+			</div>
+			<div class="cont_bth">
+				<h2>Bathrooms</h2>
+				<input class="bh" type="radio" id="h1" value="1" name="bth"/>
+				<label for="h1">1</label>
+				<input class="bh" type="radio" id="h2" value="2" name="bth"/>
+				<label for="h2">2</label>
+				<input class="bh" type="radio" id="h3" value="3" name="bth"/>
+				<label for="h3">3</label>
+				<input class="bh" type="radio" id="h4" value="4" name="bth"/>
+				<label for="h4">4</label>
+				<input class="bh" type="radio" id="h5" value="5" name="bth"/>
+				<label for="h5">5</label>
+			</div>
+			<div>
+				<h2>Locations</h2>
+				<select class="select" id="selectt">
+					<option>Choose City</option>
+				</select>
+			</div>
+			<div>
+				<button class='cont_sub' type="button" id="fetchData">Predict Price</button>
+			</div>
+			<div id="result"></div>
+		</div>
+	</form>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="{{ url_for('static', filename='js/sdu.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* FORM */
+
+.form {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
+
+.form {
+    width: 100%;
+    max-width: 240px;
+    margin: 40px 200px 0;
+}
+
+.title {
+    width: 100%;
+    max-width: 500px;
+    margin: 30px 200px 0;
+}
+
+/* CONT BED */
+
+.cont_input {
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    height: 25x;
+}
+
+.cont_bed input:checked + label {
+	background-color: #a5dc86;
+	box-shadow: none;
+}
+
+.cont_bed label {
+	background-color: #e4e4e4;
+	font-size: 14px;
+	text-align: center;
+	padding: 8px 16px;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+}
+
+.cont_bed input {
+    position: absolute !important;
+    clip: rect(0, 0, 0, 0);
+}
+
+.cont_bed label:hover {
+      background-color:#a5dc86;
+      transition: 0.2s;
+ }
+
+/* CONT BATH*/
+
+.cont_bth input {
+    position: absolute !important;
+    clip: rect(0, 0, 0, 0);
+}
+
+.cont_bth label {
+	background-color: #e4e4e4;
+	font-size: 14px;
+	text-align: center;
+	padding: 8px 16px;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+}
+
+.cont_bth input:checked + label {
+	background-color: #a5dc86;
+	box-shadow: none;
+}
+
+.cont_bth label:hover {
+    background-color:#a5dc86;
+    transition: 0.2s;
+ }
+
+/* CONT CITY*/
+
+.select {
+    width: 100%;
+    height: 40px;
+    outline: 0;
+    background: #f2f2f2;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 5px;
+}
+
+/* CONT SUB*/
+
+.cont_sub {
+    background: #a5dc86;
+    font-size: 15px;
+    width: 100%;
+	height: 40px;
+	text-align: center;
+	border-radius: 5px;
+	margin: 40px 0 10px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+/* HEAEDER*/
+
+header {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-color: #fff
+    color: #fff;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    margin: -10px -625px 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px; /* Отступ между пунктами меню */
+    }
+
+nav ul li a {
+    text-decoration: none; /* Убрать подчеркивание из ссылок */
+    color: black;
+}
+
+html {
+    background:url('https://top-fon.com/uploads/posts/2023-01/1674772705_top-fon-com-p-fon-dlya-prezentatsii-tokio-7.jpg') no-repeat center center;
+    min-height:100%;
+    background-size:cover;
+}
+
+body{
+    min-height:100%;
+}
+
+.text {
+    position: absolute;
+    width: 600px;
+    font-family: 'Montserrat', sans-serif;
+    right: 150px;
+    bottom: 210px;
+}
+
+.soz {
+    font-size: 20px;
+}
